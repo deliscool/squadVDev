@@ -1,9 +1,59 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="styles.css" />	
-	</head>
-	<body>
-		<form></form>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad36116b00.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>DigiPass</h1>
+        <h3>powered by</h3>
+        <a href="https://soverio.com/">
+            <img src="./src/img/severiologoNBG1.png" alt="" id="soverioLogo" />
+        </a>
+        <a href="https://soverio.com/">
+            <img src="./src/img/trinsicHeader_Logo 2.png" alt="" id="trinsicLogo"/>
+        </a>
+    </header>
+    <main>
+        <div class="registrationPage">
+            <div class="imgContainer">
+                <h3>Lets get your first credential registered!</h3>
+                <img
+                id="featureImage"
+                src="./src/img/input_documents illustration 1.png"
+                alt=""
+                />
+            </div>
+            <fieldset>
+                <form name="userData">
+                    <label for="firstName">First Name</label>
+                    <input name="firstName" type="text" required id="">
+                    <label for="lastName">Last Name</label>
+                    <input name="lastName" type="text" required id="">
+                    <label for="email">Email</label>
+                    <input name="email" type="email" required id="">
+                    <label for="phone">Telephone</label>
+                    <input name="phone" type="tel" placeholder="+ 1 (       )            -" required id="">
+                    <label for="birthday">Birthday</label>
+                    <input name="birthdate" type="date" required id="">
+                    <label for="gender">Gender</label><i class="fas fa-chevron-down"></i>
+                    <select name="gender" type="select" placeholder="Gender" required id="">
+                        <option value="">Select</option>
+                        <option value="gender" value="male">Male</option>
+                        <option value="gender" value="female">Female</option>
+                        <option value="gender" value="decline">Prefer not to say</option>
+                        </select>
+                    <button name="submit">REGISTER</button>
+                </form>
+            </fieldset>
+        </div>
+    </main>    
+</body>
 </html>

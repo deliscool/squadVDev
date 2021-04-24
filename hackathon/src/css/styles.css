@@ -1,0 +1,277 @@
+:root {
+    --DigiGray: linear-gradient(270deg, #777777, #9c9c9c);
+    --DigiLtGray: #f7f7f7;
+    --DigiBlue: linear-gradient(90deg, #006be5, #1a84ff);
+    font-family: 'Lato', sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10rem 1fr;
+    background-color: var(--DigiLtGray);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    width: fit-content;
+}
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    word-wrap: none;
+    height: fit-content;
+    width: 100vw;
+    padding: 20px 20px 20px 64px;
+    background: var(--DigiGray);
+    color: #ffffff;
+}
+
+header h1 {
+    position: relative;
+    bottom: -25px;    
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0 4px 4px #00000041;
+}
+
+header > * {
+    margin-right: 45px;
+}
+
+header a {
+    display: flex;
+    align-items: center;
+    height: 47px;
+    width: auto;
+}
+
+#soverioLogo {
+    margin-bottom: -15px;
+}
+
+#trinsicLogo {
+    margin-bottom: -10px;
+}
+main {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    /* background-color: #006be5; */
+}
+
+.registrationPage {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: 1fr;
+    width: 100vw;
+}
+
+.imgContainer {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.imgContainer > img {
+    height: 398px;
+    width: 478px;
+    margin: auto;
+}
+
+.imgContainer h3 {
+    margin: 64px 0 0 64px;
+}
+
+fieldset {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    padding: 2rem 2.5rem;
+    border: none;
+}
+
+fieldset form{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+
+}
+
+fieldset form input, select {
+    height: 48px;
+    width: 580px;
+    margin-bottom: 15px;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 60px;
+    background-color: #EAEAEA;
+}
+
+fieldset form > select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+
+/* for IE10 */
+fieldset form > select::-ms-expand {
+display: none;
+}
+
+.fa-chevron-down {
+    position: relative;
+    top: 34px;
+    left: 547px;
+}
+        
+fieldset  label {
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+fieldset form  button {
+    height: 73px;
+    width: 259px;
+    border: none;
+    border-radius: 70px;
+    margin: 30px auto 0 auto;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 1px;
+    background: var(--DigiGray);
+}
+
+.verificationPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.qrCode {
+    margin: 4rem auto;
+}
+
+.partnerPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.partners {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 150px;
+    margin-top: 150px;
+}
+
+.partnerPage h3 {
+    align-self: center;
+    margin-top: 2rem;
+}
+
+.partners a {
+    min-width: 33%;
+}
+
+.partners .logos {
+    height: 150px;
+    width: auto;
+    margin: auto;
+}
+
+.partners .partner1 {
+    display: grid;
+}
+
+.partners .partner2 {
+    display: grid;
+}
+
+.partners .partner3 {
+    display: grid;
+}
+
+.partners .partner4 {
+    display: grid;
+}
+
+.partners .partner5 {
+    display: grid;
+}
+
+.partners .partner6 {
+    display: grid;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 300px;
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: auto;
+    }
+
+    header h3 {
+        margin-top: 20px;
+    }
+
+    header a {
+        margin-top: 10px;
+    }
+
+    .registrationPage {
+        display: flex;
+        flex-direction: column;
+    }
+        
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgContainer {
+        margin-top: 5rem;
+    }
+
+    .imgContainer h3 {
+        width: fit-content;
+        margin: 5rem;
+    }
+
+    fieldset {
+        grid-area: 3/1/4/2;
+    }
+
+    fieldset form {
+        margin: auto;
+    }
+}
